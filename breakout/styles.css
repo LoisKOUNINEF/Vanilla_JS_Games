@@ -1,0 +1,33 @@
+.grid {
+  position: absolute;
+  width: 560px;
+  height: 300px;
+  border: solid black 1px;
+  margin-top: 100px;
+  background-image: url('images/background.png');
+  background-size: cover;
+}
+
+.block {
+  position: absolute;
+  width: 107px;
+  height: 20px;
+  background-color: lightgoldenrodyellow;
+}
+
+.player {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-image: url('images/marbre.png');
+  background-size: cover;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-image: url('images/ball.png');
+  background-size: cover;
+}
