@@ -1,0 +1,8 @@
+/*for 12 images 100px square*/
+.grid {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black 1px;
+}
