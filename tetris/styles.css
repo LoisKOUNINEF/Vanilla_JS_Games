@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+
+#game-board {
+  background-color: #ccc;
+  width: 50vmin;
+  height: 85vmin;
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+}
+
+#display-next {
+  margin-left: 10vmin;
+  background-color: #ccc;
+  width: 20vmin;
+  height: 20vmin;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
