@@ -15,6 +15,7 @@
 
 ## rock paper scissors
 - DONE add rock papers scissors lizard spock
+- DONE add picture for rules
 - add images instead of text
 - add score tracker
 
@@ -102,9 +103,3 @@ OR create an intermediate state between move and taken ?
 - add touch events
 - fix rotations when nearby a frozen tetromino (merging problem again)
 - ternary function for freeze function
-
-## mario-like
-
-## zelda-like
-
-## TextGame
