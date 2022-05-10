@@ -16,20 +16,17 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
 function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1)
-  if (randomNumber === 0) {
-    computerChoice = 'Rock'
-  }
-  if (randomNumber === 1) {
-    computerChoice = 'Paper'
-  }
-  if (randomNumber === 2) {
-    computerChoice = 'Scissors'
-  }
-  if (randomNumber === 3) {
-    computerChoice = 'Lizard'
-  }
-  if (randomNumber === 4) {
-    computerChoice = 'Spock'
+  switch (randomNumber) {
+    case 0: computerChoice = 'Rock';
+    break;
+    case 1: computerChoice = 'Paper';
+    break;
+    case 2: computerChoice = 'Scissors';
+    break;
+    case 3: computerChoice = 'Lizard';
+    break;
+    case 4: computerChoice = 'Spock';
+    break;
   }
   computerChoiceDisplay.textContent = computerChoice
 }
