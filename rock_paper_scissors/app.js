@@ -17,13 +17,19 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1)
   if (randomNumber === 0) {
-    computerChoice = 'rock'
+    computerChoice = 'Rock'
   }
   if (randomNumber === 1) {
-    computerChoice = 'paper'
+    computerChoice = 'Paper'
   }
   if (randomNumber === 2) {
-    computerChoice = 'scissors'
+    computerChoice = 'Scissors'
+  }
+  if (randomNumber === 3) {
+    computerChoice = 'Lizard'
+  }
+  if (randomNumber === 4) {
+    computerChoice = 'Spock'
   }
   computerChoiceDisplay.innerHTML = computerChoice
 }
@@ -32,23 +38,36 @@ function getResult() {
   if (computerChoice === userChoice) {
     result = 'Draw !'
   }
-  if (computerChoice === 'paper' && userChoice === 'scissors') {
+  if (computerChoice === 'Paper' && (userChoice === 'Scissors' || userChoice === 'Lizard')) {
     result = 'Win !'
   }
-  if (computerChoice === 'paper' && userChoice === 'rock') {
+  if (computerChoice === 'Paper' && (userChoice === 'Rock' || userChoice === 'Spock')) {
     result = 'Lose !'
   }
-  if (computerChoice === 'scissors' && userChoice === 'paper') {
+  if (computerChoice === 'Scissors' && (userChoice === 'Paper' || userChoice === 'Lizard')) {
     result = 'Lose !'
   }
-  if (computerChoice === 'scissors' && userChoice === 'rock') {
+  if (computerChoice === 'Scissors' && (userChoice === 'Rock' || userChoice === 'Spock')) {
     result = 'Win !'
   }
-  if (computerChoice === 'rock' && userChoice === 'scissors') {
+  if (computerChoice === 'Rock' && (userChoice === 'Scissors' || userChoice === 'Lizard')) {
     result = 'Lose !'
   }
-  if (computerChoice === 'rock' && userChoice === 'paper') {
+  if (computerChoice === 'Rock' && (userChoice === 'Paper' || userChoice === 'Spock')) {
     result = 'Win !'
   }
+  if (computerChoice === 'Lizard' && (userChoice === 'Rock' || userChoice === 'Scissors')) {
+    result = 'Win !'
+  }
+  if (computerChoice === 'Lizard' && (userChoice === 'Paper' || userChoice === 'Spock')) {
+    result = 'Lose !'
+  }
+  if (computerChoice === 'Spock' && (userChoice === 'Lizard' || userChoice === 'Paper')) {
+    result = 'Win !'
+  }
+  if (computerChoice === 'Spock' && (userChoice === 'Rock' || userChoice === 'Scissors')) {
+    result = 'Lose !'
+  }
+
   resultDisplay.innerHTML = result
 }
