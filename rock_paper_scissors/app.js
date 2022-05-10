@@ -8,10 +8,10 @@ let computerChoice
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChoice = e.target.id
-  userChoiceDisplay.innerHTML = userChoice
+  userChoiceDisplay.textContent = userChoice
   generateComputerChoice()
   getResult()
-  resultDisplay.innerHTML = result
+  resultDisplay.textContent = result
 }))
 
 function generateComputerChoice() {
@@ -31,7 +31,7 @@ function generateComputerChoice() {
   if (randomNumber === 4) {
     computerChoice = 'Spock'
   }
-  computerChoiceDisplay.innerHTML = computerChoice
+  computerChoiceDisplay.textContent = computerChoice
 }
 
 function getResult() {
@@ -69,5 +69,5 @@ function getResult() {
     result = 'Lose !'
   }
 
-  resultDisplay.innerHTML = result
+  resultDisplay.textContent = result
 }
