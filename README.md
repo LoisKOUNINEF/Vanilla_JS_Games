@@ -14,15 +14,9 @@
 - choose a game that you can only play after reaching a certain global score OR a certain amount of games played OR after playing at least one game of each.
 
 ## rock paper scissors
-- add rock papers scissors lizard spock
+- DONE add rock papers scissors lizard spock
 - add images instead of text
 - add score tracker
-- create grid : 4 rows computer / fight / result / player
-- computer row display computer score
-- fight row display images for choices
-- result display fight result
-- maybe fight row and result row should be merged into one
-- player row displays player score
 
 ## memory game
 - add flip animation
