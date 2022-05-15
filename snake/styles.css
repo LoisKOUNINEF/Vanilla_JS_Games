@@ -6,12 +6,24 @@ body {
   align-items: center;
   margin: 0;
   background-color: black;
+  color: white;
+  overflow: hidden;
 }
+
+/*h2, h3 {
+  position: relative;
+}*/
+
+/*.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
 
 #game-board {
   background-color: #ccc;
-  width: 100vmin;
-  height: 100vmin;
+  width: 85vmin;
+  height: 85vmin;
   display: grid;
   grid-template-rows: repeat(21, 1fr);
   grid-template-columns: repeat(21, 1fr);
