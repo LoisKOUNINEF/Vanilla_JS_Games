@@ -1,6 +1,7 @@
-import { update as updateSnake, render as renderSnake, snakeSpeed,
+import { update as updateSnake, render as renderSnake,
   getSnakeHead, snakeCollision } from './snake.js'
 import { update as updateFood, render as renderFood } from './food.js'
+import { snakeSpeed } from './score.js'
 import { outsideGrid } from './grid.js'
 
 let lastRenderTime = 0
@@ -10,10 +11,10 @@ const gameBoard = document.getElementById('game-board')
 function main(currentTime) {
   if (gameOver) {
     if (confirm('You lost. Press OK to retry !')) {
-      window.location = '/'
+      window.location= '/'
     }
     return
-  }
+  };
 
   window.requestAnimationFrame(main)
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
