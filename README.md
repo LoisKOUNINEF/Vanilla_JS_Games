@@ -1,22 +1,16 @@
-# Features added & To-do list
+# Features added
 
 
 ## rock paper scissors
 - add rock papers scissors lizard spock
 - add picture for rules
 
-## memory game
-
-## whack-a-mole
-
-## breakout
-
 ## frogger
 
 - can start and pause using spacebar
 - add images
 - rename car right c1 by c4 and add this to 'lose' function
-- Make frog visible on startup
+- a bit of responsiveness
 
 ## match four
 
@@ -24,7 +18,12 @@
 
 ## snake
 
+- add score count and best score with localStorage
+- add speed increase every 10 food eaten
+- add background and font
+- add touch controls (swipe)
+
 ## tetris
 
-- ( Thanks JBV !) fix rotateLeft (for L and T specially)
-- ( Thanks JBV !) fix bug making tetromino disappear if first in put is rotateLeft
+- fix rotateLeft (for L and T specially)
+- fix bug making tetromino disappear if first input is rotateLeft
