@@ -5,9 +5,9 @@ const bestScoreDisplay = document.getElementById('best-score')
 
 let currentScore = 0;
 let scoreCount = 0;
-let currentBest = localStorage.bestScore ? JSON.parse(localStorage.bestScore) : 0
+let currentBest = localStorage.bestSnakeScore ? JSON.parse(localStorage.bestSnakeScore) : 0
 
-function bestScore() {
+function bestScoreConfig() {
   if (currentBest < 10) {
     bestScoreDisplay.textContent = "00" + currentBest
   }
@@ -19,7 +19,7 @@ function bestScore() {
   }
 }
 
-function scoreConfig() {
+function currentScoreConfig() {
   if (currentScore < 10) {
     scoreDisplay.textContent = "00" + currentScore
   }
@@ -31,22 +31,26 @@ function scoreConfig() {
   }
 }
 
+function increaseSpeed() {
+    if (scoreCount === 10) {
+    snakeSpeed += 2
+    scoreCount = 0
+  }
+}
+
 function score() {
   currentScore ++
   scoreCount ++
   if (currentScore > currentBest) {
     currentBest = currentScore
   }
-  scoreConfig()
-  bestScore()
-  localStorage.setItem("bestScore", JSON.stringify(currentBest))
-  if (scoreCount === 10) {
-    snakeSpeed += 2
-    scoreCount = 0
-  }
+  currentScoreConfig()
+  bestScoreConfig()
+  localStorage.setItem("bestSnakeScore", JSON.stringify(currentBest))
+  increaseSpeed()
 }
 
-bestScore()
-scoreConfig()
+bestScoreConfig()
+currentScoreConfig()
 
 export default score
