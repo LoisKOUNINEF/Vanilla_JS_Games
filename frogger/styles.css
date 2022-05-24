@@ -1,14 +1,26 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .grid {
-  height: 360px;
-  width: 360px;
+  height: 90vmin;
+  width: 90vmin;
   border: solid black 1px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .grid div {
-  height: 40px;
-  width: 40px;
+  height: 10vmin;
+  width: 10vmin;
 }
 
 .goal-block {
@@ -25,6 +37,7 @@
 /* you can also put this part of css at the bottom of the file so that it gets executed last*/
 .frog {
   background-image: url('images/frog.png')!important;
+  background-position: center;
   background-size: cover;
 }
 

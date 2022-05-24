@@ -1,5 +1,4 @@
 const timeLeftDisplay = document.getElementById('time-left')
-const resultDisplay = document.getElementById('result')
 const startPause = document.getElementById('start-pause')
 const squares = document.querySelectorAll('.grid div')
 const logsLeft = document.querySelectorAll('.log-left')
@@ -149,8 +148,7 @@ function lose() {
 
 function win() {
   if (squares[currentPosition].classList.contains('goal-block')) {
-    resultDisplay.textContent = ('You win !')
-    startPause.textContent = 'Game over.'
+    startPause.textContent = 'You win !'
     clearInterval(timer)
     clearInterval(outcomeTimer)
     document.removeEventListener('keyup', moveFrog)
