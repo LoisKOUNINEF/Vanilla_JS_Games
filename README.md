@@ -2,6 +2,7 @@
 
 
 ## rock paper scissors
+
 - add rock papers scissors lizard spock
 - add picture for rules
 
@@ -11,10 +12,6 @@
 - add images
 - rename car right c1 by c4 and add this to 'lose' function
 - a bit of responsiveness
-
-## match four
-
-## space invaders
 
 ## snake
 
